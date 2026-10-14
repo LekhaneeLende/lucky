@@ -1,14 +1,14 @@
-name : lekhanee lende
 
-on: 
- push:
-  branches: [main]
+name: Greetings
 
-  jobs:
-   demo:
-    run-on: ubuntu-latest
+on:
+  push:
+    branches: [main]
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
 
     steps:
-        - name: Greetings
-         run: echo "Hello from Apum"
-  
+      - name: Greetings
+        run: echo "Hello from Apum"
